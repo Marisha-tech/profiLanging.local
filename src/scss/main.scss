@@ -1,0 +1,31 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "settings";
+
+
+@import "./components/header";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/about-tagline";
+@import "components/about";
+@import "./components/certificates";
+//@import "./vendor/swiper.min.css";
+@import "./vendor/swiper-bundle.min.css";
+@import "components/why";
+@import "components/service";
+@import "components/contacts";
+@import "components/map";
+@import "components/footer";
+
+
+
+// CUSTOM COMPONENTS STYLES
+// .burger {
+//   --burger-width: 40px;
+//   --burger-height: 20px;
+//   --burger-line-height: 2px;
+
+//   @include burger;
+// }

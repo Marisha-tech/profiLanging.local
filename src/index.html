@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Компания Профи</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<title>New site</title>
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="https://widgets.2gis.com/js/DGWidgetLoader.js"  data-skip-moving=true></script>
+</head>
+<body>
+	<div class="site-container">
+		<button class="scrollToTop"> <svg>
+		    <use xlink:href="../img/sprite.svg#up-arrow"></use>
+		</svg></button>
+		@include('html/header.html')
+		<main class="main">
+			@include('html/hero.html')
+			@include('html/about-tagline.html')
+			@include('html/about.html')
+			@include('html/certificates.html')
+			@include('html/why.html')
+			@include('html/service.html')
+			@include('html/contacts.html')
+<!--			@include('html/map.html')-->
+		</main>
+		@include('html/footer.html')
+		<!-- @include('html/h1.html') пример инклуда -->
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

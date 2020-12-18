@@ -1,0 +1,93 @@
+<section class="contacts" id="contacts">
+    <!--  <div class="container contacts__container">
+          <h2>Контакты</h2>
+          <p class="contacts__text">Звоните, пишите нам. Если Вы еще не являетесь нашим клиентом, но заинтересованы начать
+              сотрудничество, обращайтесь, ждём Вас!</p>
+          <ul class="contacts__list">
+              <li class="contacts__item">
+                  <svg class="contacts__svg">
+                      <use xlink:href="../img/sprite.svg#contact-1"></use>
+                  </svg>
+                  <h3 class="contacts__title">Контактная информация</h3>
+                  <ul class="contacts__phone">
+                      <li class="phone__item"><a href="tel:+73833574588" class="phone__link">+7 (383) 357‒45‒88 (Новосибирск)</a></li>
+                      <li class="phone__item"><a href="tel:+73833492299" class="phone__link">+7 (383) 349‒22‒99 (Новосибирск)</a></li>
+                      <li class="phone__item"><a href="mailto:info@sibprofi.ru" class="phone__link">info@sibprofi.ru</a></li>
+                  </ul>
+                  <ul class="social__list">
+                      <li class="social__link"><a href="https://www.instagram.com/sibprofi.ru/?hl=ru">
+                           <svg class="social__svg">
+                               <use xlink:href="../img/sprite.svg#instagram"></use>
+                           </svg>
+                      </a></li>
+                      <li class="social__link"><a href="https://career.habr.com/companies/sibprofi">
+                          <img class="social__img" src="../img/habr.png" alt="Хабр карьера" title="Хабр карьера">
+                      </a></li>
+                  </ul>
+              </li>
+              <li class="contacts__item">
+                  <svg class="contacts__svg">
+                      <use xlink:href="../img/sprite.svg#contact-2"></use>
+                  </svg>
+                  <h3 class="contacts__title">Адрес и режим работы</h3>
+                  <p>630091, г. Новосибирск, ул. Писарева 1, 2 этаж
+                      </p>
+                  <p>Мы работаем с понедельника по пятницу с 9 до 18 часов.</p>
+              </li>
+              <li class="contacts__item">
+                  <svg class="contacts__svg">
+                      <use xlink:href="../img/sprite.svg#contact-3"></use>
+                  </svg>
+                  <h3 class="contacts__title">Как нас найти</h3>
+                  <p>м. Гагаринская. ул. Писарева, 1 2 этаж, прозрачная дверь прямо с лестницы, видеодомофон.</p>
+              </li>
+          </ul>
+      </div>-->
+    <div class="container-fluid contacts-option contacts-option__container--background">
+        <div class="container contacts-option__container">
+            <h2 class="contacts-option__title scroll-item animation-no">Наши контакты</h2>
+            <ul class="contacts-option__phone">
+                <li class="contacts-option__item scroll-item animation-no"><a href="tel:+73833574588" class="contacts-option__link">+7 (383)
+                    357‒45‒88</a></li>
+                <li class="contacts-option__item scroll-item animation-no"><a href="tel:+73833492299" class="contacts-option__link">+7 (383)
+                    349‒22‒99</a></li>
+            </ul>
+            <a href="mailto:info@sibprofi.ru" class="contacts-option__phone">info@sibprofi.ru</a>
+            <p class="contacts-option__address">630091, г. Новосибирск, ул. Писарева 1, 2 этаж</p>
+            <p class="contacts-option__text">Звоните, пишите нам. Если Вы еще не являетесь нашим клиентом, но
+                заинтересованы начать
+                сотрудничество, обращайтесь, ждём Вас!</p>
+        </div>
+
+    </div>
+    <div class="container-fluid map__container">
+        <div id="map-container">
+           <!-- <a class="dg-widget-link"
+               href="http://2gis.ru/novosibirsk/firm/141265769401264/center/82.91283130645753,55.04885123285177/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+                на карте Новосибирска</a>-->
+          <!--  <div class="dg-widget-link"><a
+                    href="http://2gis.ru/novosibirsk/firm/141265769401264/photos/141265769401264/center/82.91283130645753,55.04885123285177/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии
+                компании</a></div>-->
+          <!--  <div class="dg-widget-link"><a
+                    href="http://2gis.ru/novosibirsk/center/82.912905,55.048615/zoom/16/routeTab/rsType/bus/to/82.912905,55.048615╎Профи, компания IT-решений?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+                проезд до Профи, компания IT-решений</a></div>-->
+
+            <script data-skip-moving=true>
+                var width_100_percent;
+                width_100_percent = "100%";
+
+                new DGWidgetLoader({
+                    "width": width_100_percent,
+                    "height": 400,
+                    "borderColor": "#a3a3a3",
+                    "pos": {"lat": 55.04885123285177, "lon": 82.91283130645753, "zoom": 16},
+                    "opt": {"city": "novosibirsk"},
+                    "org": [{"id": "141265769401264"}]
+                });</script>
+            <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите
+                его в
+                настройках вашего браузера.
+            </noscript>
+        </div>
+    </div>
+</section>

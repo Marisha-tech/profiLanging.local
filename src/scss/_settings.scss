@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Hind", sans-serif;
+  font-size: 20px;
+  background-color: var(--color-white);
+  color: var(--color-mine-shaft);
+  @media(max-width: 576px) {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-weight: 400;
+  //line-height: 39px;
+  //color: var(--color-aluminium);
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-blaze-orange);
+  margin: 0;
+  padding: 0;
+  @media(max-width: 576px) {
+    font-size: 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blaze-orange);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  border-radius: 4px;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  z-index: 1001;
+  color: #ffffff;
+  transition: background-color 0.5s ease-in-out;
+  background-color: var(--color-blaze-orange);
+  border: 0;
+  cursor: pointer;
+  display: none;
+
+  &:hover {
+    background-color: var(--color-white);
+    transition: background-color 0.5s ease-in-out;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid var(--color-blaze-orange);
+
+    svg {
+
+      fill: var(--color-blaze-orange);
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-white);
+
+  }
+}
+
+
+.is-outer {
+  position: relative !important; // stylelint-disable-line declaration-no-important
+  left: -9999px !important; // stylelint-disable-line declaration-no-important
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.stop-scroll {
+  @include stop-scroll;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.for-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.error {
+  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 15px;
+  //max-width: 1200px;
+
+  &__video {
+    padding: 0;
+  }
+}
+
+.container-map{
+  margin: 0;
+  padding: 0;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

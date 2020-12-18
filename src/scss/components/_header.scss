@@ -1,0 +1,62 @@
+.header {
+
+  font-size: 13px;
+  font-weight: 900;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  //background-color: #2a2a26;
+  background: rgba(0, 0, 0, 0.4) url(/img/overlay.png);;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  &__burger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    right: 15px;
+    order: 1;
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    span {
+      background-color: var(--color-white);
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all .3s ease 0s;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      background-color: var(--color-white);
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all .3s ease 0s;
+    }
+    &::before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+
+  }
+
+}
+
+.logo {
+  width: 200px;
+}
